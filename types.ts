@@ -1,9 +1,8 @@
 import type { Language } from 'prism-react-renderer';
 
-export interface Quote {
-  anime: string;
-  character: string;
-  quote: string;
+export interface Shloka {
+  Sloka: string;
+  Class: string;
 }
 
 export interface CodeSample {

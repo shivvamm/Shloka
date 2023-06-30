@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <div className="container px-2 relative mx-auto max-w-4xl text-center mt-20 pt-20 pb-10 bg-gradient-to-r">
       <h1 className="lg:text-7xl text-6xl font-display font-bold text-shadow-md">
-        Animechan
+       Shloka
       </h1>
       <div className="py-10">
         <h2 className="text-2xl">A free restful API serving quality Sanskrit Shlokas</h2>

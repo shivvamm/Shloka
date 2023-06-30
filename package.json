@@ -1,5 +1,5 @@
 {
-  "name": "animechan-website",
+  "name": "shloka-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,8 +23,8 @@
     "@types/node": "18.11.3",
     "@types/prettier": "^2.7.1",
     "@types/react": "18.0.21",
-    "@types/stringify-object": "^4.0.1",
     "@types/react-scroll": "^1.8.4",
+    "@types/stringify-object": "^4.0.1",
     "autoprefixer": "^10.4.12",
     "husky": ">=6",
     "lint-staged": "^13.0.3",

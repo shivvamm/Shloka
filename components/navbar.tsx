@@ -16,7 +16,7 @@ export default function Navbar() {
               <span
                 onClick={() => setNavbarOpen(false)}
                 className="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap no-underline cursor-pointer">
-                Animechan
+              Shloka
               </span>
             </Link>
             <button

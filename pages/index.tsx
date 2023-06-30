@@ -5,18 +5,18 @@ import CodeBlock from '~/components/codeblock';
 import Header from '~/components/header';
 import Layout from '~/components/Layout';
 import Spinner from '~/components/spinner';
-import { CodeBlock as CodeBlockType, Quote } from '~/types';
+import { CodeBlock as CodeBlockType, Shloka } from '~/types';
 
 export default function Home() {
-  const [randomQuote, setRandomQuote] = useState<Quote>(null);
+  const [randomQuote, setRandomQuote] = useState<Shloka>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [clickCount, setClickCount] = useState<number>(0);
 
   const requestCodeBlock: CodeBlockType = {
     language: 'javascript',
-    snippet: `fetch('https://animechan.vercel.app/api/random')
-    .then(response => response.json())
-    .then(quote => console.log(quote))`,
+    snippet: `fetch('https://shloka.onrender.com/api/v1/sanskrit/slogan/random')
+    .then(response => response.data())
+    .then(data => console.log(data))`,
   };
 
   const responseCodeBlock: CodeBlockType = {
@@ -30,7 +30,7 @@ export default function Home() {
     setRandomQuote(null);
     setIsLoading(true);
 
-    fetch('/api/random')
+    fetch('https://shloka.onrender.com/api/v1/sanskrit/slogan/random')
       .then((response) => response.json())
       .then((json) => {
         setIsLoading(false);
@@ -58,15 +58,6 @@ export default function Home() {
             {isLoading && <Spinner />} Run script
           </button>
           <CodeBlock {...responseCodeBlock} />
-          {/*{randomQuote && (
-            <p className="mt-3 text-md">
-              Here is {clickCount > 1 ? 'another' : 'a'} random Shloka by -{' '}
-              <span className="font-semibold">
-                {randomQuote?.Sloka} <span className="font-normal">from</span>{' '}
-                {randomQuote?.Class} 😃 🎉
-              </span>
-            </p>
-          )}*/}
         </div>
       </Element>
     </Layout>
