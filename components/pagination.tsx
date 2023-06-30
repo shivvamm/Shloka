@@ -8,9 +8,9 @@ export default function pagination() {
     .then(quotes => console.log(quotes))
 
      // works on character queries too 👇
-      // https://shloka.onrender.com/api/v1/chanakya/shloka?page=1&limit=10,
-      // https://shloka.onrender.com/api/v1/sanskrit/slogan?page=1&limit=10,
-      // https://shloka.onrender.com/api/v1/vidur_niti/maxims?page=1&limit=10`,
+      // https://shloka.onrender.com/api/v1/chanakya/shloka?page=1&limit=10
+      // https://shloka.onrender.com/api/v1/sanskrit/slogan?page=1&limit=10
+      // https://shloka.onrender.com/api/v1/vidur_niti/maxims?page=1&limit=10`
 
   const responseSample = `[
         { "chapter": "...", "Verse No": "...", "English Translation": '...' ,"Explanation":"..." },
