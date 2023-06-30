@@ -58,7 +58,7 @@ export default function Home() {
             {isLoading && <Spinner />} Run script
           </button>
           <CodeBlock {...responseCodeBlock} />
-          {randomQuote && (
+          {/*{randomQuote && (
             <p className="mt-3 text-md">
               Here is {clickCount > 1 ? 'another' : 'a'} random Shloka by -{' '}
               <span className="font-semibold">
@@ -66,7 +66,7 @@ export default function Home() {
                 {randomQuote?.Class} 😃 🎉
               </span>
             </p>
-          )}
+          )}*/}
         </div>
       </Element>
     </Layout>
