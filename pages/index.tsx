@@ -44,7 +44,7 @@ export default function Home() {
       <Element name="tryThis">
         <div className="container relative max-w-4xl px-2 py-16 lg:mx-auto">
           <h1 className="text-4xl font-bold font-display">Try it</h1>
-          <h2 className="my-5 text-lg">Run this code to get a random Shloka</h2>
+          <h2 className="my-5 text-lg">Run this code to get a random Sanskrit Slogan</h2>
           <CodeBlock {...requestCodeBlock} />
           <button
             className={`inline-flex items-center bg-green-500 text-white active:bg-green-600 font-bold uppercase text-xs px-4 py-3
