@@ -36,4 +36,4 @@ Shloka is a side project I started in 2023 because I could not find an API that 
 
 ## License
 
-[MIT License](./LICENSE) © 2022 [Rocktim Saikia](https://rocktimsaikia.com)
+[MIT License](./LICENSE) © 2022 [Shivam](https://mrshivam.netlify.com)
