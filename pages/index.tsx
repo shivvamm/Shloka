@@ -15,7 +15,7 @@ export default function Home() {
   const requestCodeBlock: CodeBlockType = {
     language: 'javascript',
     snippet: `fetch('https://shloka.onrender.com/api/v1/sanskrit/slogan/random')
-    .then(response => response.data())
+    .then(response => response.json())
     .then(data => console.log(data))`,
   };
 
